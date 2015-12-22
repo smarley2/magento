@@ -1,0 +1,28 @@
+Ubuntu server com Lamp
+Instalar php5 completo
+clonado github da versão 1.9.2.2
+Deletado index.html
+
+sudo ln -s /etc/php5/conf.d/mcrypt.ini /etc/php5/mods-available/mcrypt.ini
+sudo php5enmod mcrypt
+sudo restart apache2
+
+Tradução do MarioSAM
+
+No Bling existe instruções para modificar os campos de endereço solicitados pelo Pagar.me
+Integração com o MercadoPago precisa verificar sobre o parcelamento sem juros.
+
+Chave - a0e00f5b28be858e66d8066e9f6d9d09
+
+Remover pastas, rm -R diretorio
+
+Mover pastas, mv teste1/* /home/usuario/www/teste2
+
+ Observação: 
+ 1 - O * vai mover todo o conteúdo de arquivos e pastas existentes no teste1 para teste2;
+ 2 - onde usuario é o usuário logado no shell;
+
+rsync -a src origem destino --remove-sent-files --ignore-existing --whole-file
+
+No seu caso:
+rsync -a /home/ederson/Imagens/Fotos/2010 /home/ederson/Imagens/2010 --remove-sent-files --ignore-existing --whole-file
